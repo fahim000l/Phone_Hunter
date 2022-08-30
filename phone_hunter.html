@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Hunter</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+
+<body>
+
+    <header class="text-center p-5 m-5">
+
+        <h1>Welcome to Phone Hunter</h1>
+    </header>
+
+    <main class="container">
+
+        <section>
+            <div class="input-group mb-3">
+                <input id="search-in" type="text" class="form-control" placeholder="Search your phone"
+                    aria-label="Recipient's username" aria-describedby="button-addon2">
+                <button class="btn btn-primary trxt-white" type="button" id="search-btn">search</button>
+            </div>
+        </section>
+        <section>
+            <div id="phone-container" class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- <div class="col">
+                        <div class="card p-2 rounded-3 bg-secondary bg-gradient text-white">
+                            <img class="rounded-3"
+                                src="https://th.bing.com/th/id/OIP.JMjuON6Wus1pBq9PJ-xXTgHaHa?pid=ImgDet&rs=1"
+                                class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h1 class="card-title">Iphone</h1>
+                                <h2 class="card-title">Apple</h2>
+                                <h4 class="card-title">${phone.slug}</h4>
+                            </div>
+                        </div> -->
+            </div>
+            </div>
+        </section>
+
+        <section class="m-5 p-5 d-flex justify-content-center align-items-center">
+            <button id="seeall-btn" class="btn btn-primary d-none">
+                See All
+            </button>
+        </section>
+        <section id="not-found" class="d-none">
+            <h1 class="text-warning text-center p-5 m-5">Search result not found</h1>
+        </section>
+
+        <section id="spinner" style="height: 500px;"
+            class="d-flex justify-content-center align-items-center border d-none">
+            <div class="spinner-border text-danger border-5" role="status">
+                <span class="visually-hidden">Loading...</span>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+    <script src="scripts/phone_hunter.js"></script>
+
+</body>
+
+</html>
